@@ -1,5 +1,14 @@
+:root {
+  --dark-blue: #213347;
+  --light-blue: #8fb0d6;
+  --text: #a7b8c0;
+  --lightest-blue: #00e5ff;
+  --links: #7599c8;
+}
+
 body {
-  color: #2b283a;
+  color: var(--text);
+  background-color: #151518;
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
@@ -14,10 +23,12 @@ h3 {
 h1 {
   color: whitesmoke;
   font-size: 1.75rem;
+  text-align: center;
 }
 
 h2 {
-  color: #451c7a;
+  color: var(--text);
+  text-align: center;
   font-size: 1.375rem;
   margin-top: 0;
 }
@@ -33,7 +44,7 @@ p {
 .subheading {
   display: block;
   font-size: 1rem;
-  color: #d0aaff;
+  color: var(--light-blue);
 }
 
 .section-two h2 {
@@ -43,13 +54,13 @@ p {
 /* ----- LINKS ----- */
 
 a {
-  color: #ef5839;
+  color: var(--links);
   text-decoration: underline dotted;
 }
 
 a:hover,
 a:active {
-  color: #d4b44c;
+  color: var(--lightest-blue);
 }
 
 .btn {
@@ -65,23 +76,23 @@ a:active {
 
 .btn-dark {
   color: whitesmoke;
-  background: #5f29a3;
+  background: var(--dark-blue);
 }
 
 .btn-mid {
-  color: #5f29a3;
-  background: #f0e0ff;
+  color: var(--dark-blue);
+  background: var(--light-blue);
 }
 
 .btn-light {
-  color: #5f29a3;
+  color: var(--dark-blue);
   background: whitesmoke;
 }
 
 .btn:hover,
 .btn:active {
   color: #2b238a;
-  background-color: #f3e885;
+  background-color: var(--lightest-blue);
 }
 
 /* ----- LAYOUT ----- */
@@ -94,7 +105,7 @@ footer {
 
 header,
 .section-two {
-  background-color: #5f29a3;
+  background-color: var(--dark-blue);
 }
 
 .section-two {
@@ -107,10 +118,10 @@ header,
   margin: 0 auto;
 }
 
-.main-image {
-  width: 100%;
+.image {
+  width: 50%;
   display: block;
-  max-width: 640px;
+  max-width: 300px;
   margin: 0 auto 2em;
 }
 
@@ -121,8 +132,15 @@ header,
 }
 
 .feature-image {
-  width: 100%;
+  width: 50%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 1em;
   border-radius: 4.6px;
+}
+
+#desktop {
+  width: 100%;
 }
 
 .feature-item {
@@ -131,7 +149,7 @@ header,
 
 footer {
   text-align: center;
-  color: #5f29a3;
+  color: var(--light-blue);
 }
 
 /* ----- NAVIGATION ----- */

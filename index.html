@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>NFT Site</title>
+    <title>Linux Distribution Guide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -8,90 +8,194 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
   </head>
 
   <body>
     <header>
       <div class="container">
         <h1>
-          Wildly Expensive JPEGs
-          <span class="subheading">(Also known as NFTs)</span>
+          Linux Guide
+          <span class="subheading">Picking Distributions</span>
         </h1>
 
         <!-- Site Navigation -->
         <nav>
           <ul>
-            <li><a href="#">Buy</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Distributions</a></li>
             <li><a href="#">Resources</a></li>
-            <li><a href="#">Explore</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
+      <!-- Debian -->
       <section>
         <div class="container">
-          <h2>Meta-Pigeon Sneaker NFT: $33,000</h2>
-          <img
-            src="images/sneakers-purple.png"
-            alt="Purple and silver sneakers"
-            class="main-image"
-          />
-          <h3>At $33k, this NFT sneaker is super good value!</h3>
+          <h2>Debian</h2>
+          <img src="images/debian.png" alt="Debian logo" class="image" />
+          <h3>A stable, universal operating system</h3>
           <p>
-            If you've got lots of money and you're a bit silly, NFTs are a great
-            way to pay for something that doesn't have any intrinsic value or
-            even exist. Tech fashionistas are jumping on the NFT bandwagon and
-            spending eye-watering sums of money on crypto images. Our advice:
-            spend the weekend <a href="#">crafting an NFT</a>, and by this time
-            next week, you'll be a millionaire.
+            Debian is one of the oldest and most influential GNU/Linux
+            distributions, known for its stability, security, and strict
+            commitment to free software. It provides tens of thousands of
+            packages through the APT package manager and serves as the
+            foundation for many other distributions, including Ubuntu. Debian is
+            suitable for servers, desktops, and embedded systems, offering
+            long-term support and predictable release cycles.
           </p>
-          <a href="#" class="btn btn-dark">Buy NFTs</a>
-          <a href="#" class="btn btn-mid">More info</a>
+          <img
+            src="images/debian-desktop.jpg"
+            alt="Debian desktop environment screenshot"
+            class="image"
+            id="desktop"
+          />
+          <a href="https://www.debian.org/distrib/" class="btn btn-dark"
+            >Download Debian</a
+          >
+          <a href="https://www.debian.org/doc/" class="btn btn-mid"
+            >Documentation</a
+          >
         </div>
       </section>
 
+      <!-- Arch Linux -->
       <section class="section-two">
         <div class="container">
-          <h2>For the true Crypto-connoisseur</h2>
+          <h2>Arch Linux</h2>
           <div class="section-two-image-container">
             <div class="feature-item">
               <img
-                src="images/crypto-punk.jpg"
-                alt="punk with blach hair and red and blue glasses"
+                src="images/arch.png"
+                alt="Arch Linux logo"
                 class="feature-image"
               />
               <p>
-                Is $33k for sneakers too basic? No problem! This CryptoPunk is a
-                steal at $6.6 million, making Bag #748 (right) a total bargain.
+                Arch Linux is a lightweight, rolling-release distribution aimed
+                at experienced users who want a highly customizable system. It
+                follows the KISS (Keep It Simple, Stupid) philosophy, providing
+                a minimal base install and letting you build exactly the system
+                you need.
               </p>
             </div>
             <div class="feature-item">
               <img
-                src="images/bag.svg"
-                alt="Seven items from a game listed in white on a black background"
+                src="images/arch-desktop.jpg"
+                alt="Screenshot of an Arch Linux desktop"
                 class="feature-image"
+                id="desktop"
               />
               <p>
-                That's not a screenshot. Those eight lines of white text on a
-                black background is the actual NFT we're selling for $1.4
-                million.
+                A typical Arch Linux setup is built from the ground up: you
+                choose your own desktop environment or window manager, software
+                stack, and configuration. This makes Arch ideal for users who
+                enjoy learning how Linux works under the hood.
               </p>
             </div>
           </div>
-          <a href="#" class="btn btn-light">About Us</a>
-          <a href="#" class="btn btn-mid">Contact</a>
+          <a href="https://archlinux.org/download/" class="btn btn-light"
+            >Download Arch Linux</a
+          >
+          <a href="https://wiki.archlinux.org/" class="btn btn-mid"
+            >Arch Wiki</a
+          >
           <p>
-            Still not convinced? To be honest, nor are we. That's why we're
-            selling them, not buying them.
+            New to Linux? You may want to start with a more beginner-friendly
+            distribution before moving to Arch. If you're already comfortable
+            with the terminal and manual configuration, Arch offers unmatched
+            flexibility and control.
           </p>
         </div>
       </section>
 
-      <footer>
-        <p>&copy; 2022 FoolsGold.com</p>
-      </footer>
+      <!-- Ubuntu -->
+      <section>
+        <div class="container">
+          <h2>Ubuntu</h2>
+          <img src="images/ubuntu.png" alt="Ubuntu logo" class="image" />
+          <h3>User-friendly and widely supported</h3>
+          <p>
+            Ubuntu is one of the most popular desktop Linux distributions,
+            designed to be welcoming for beginners while remaining powerful
+            enough for developers. It offers regular releases, long-term support
+            (LTS) versions, and a polished GNOME desktop environment. With
+            strong community and commercial backing, Ubuntu is a great starting
+            point for most users.
+          </p>
+          <img
+            src="images/ubuntu-desktop.jpg"
+            alt="Ubuntu desktop environment screenshot"
+            class="image"
+            id="desktop"
+          />
+          <a href="https://ubuntu.com/download" class="btn btn-dark"
+            >Download Ubuntu</a
+          >
+          <a href="https://help.ubuntu.com/" class="btn btn-mid"
+            >Documentation</a
+          >
+        </div>
+      </section>
+
+      <!-- Linux Mint -->
+      <section class="section-two">
+        <div class="container">
+          <h2>Linux Mint</h2>
+          <div class="section-two-image-container">
+            <div class="feature-item">
+              <img
+                src="images/mint.png"
+                alt="Linux Mint logo"
+                class="feature-image"
+              />
+              <p>
+                Linux Mint is based on Ubuntu and focuses on providing a
+                familiar desktop experience for users coming from Windows. Its
+                Cinnamon desktop environment offers a traditional layout with
+                menus, panels, and system tray icons, making it easy to
+                navigate.
+              </p>
+            </div>
+            <div class="feature-item">
+              <img
+                src="images/mint-desktop.jpg"
+                alt="Screenshot of a Linux Mint desktop"
+                class="feature-image"
+                id="desktop"
+              />
+              <p>
+                Mint includes sensible defaults, multimedia codecs out of the
+                box, and user-friendly tools to manage updates, drivers, and
+                system settings. It is a solid choice for everyday desktop use
+                with minimal configuration required.
+              </p>
+            </div>
+          </div>
+          <a href="https://linuxmint.com/download.php" class="btn btn-light"
+            >Download Linux Mint</a
+          >
+          <a href="https://linuxmint.com/documentation.php" class="btn btn-mid"
+            >User Guide</a
+          >
+        </div>
+      </section>
+
+      <!-- Fedora -->
+      <section>
+        <div class="container">
+          <h2>Fedora</h2>
+          <img src="images/fedora.png" alt="Fedora logo" class="image" />
+          <h3>Cutting-edge features with Red Hat backing</h3>
+          <p>
+            Fedora is a community-driven distribution sponsored by Red Hat,
+            focused on delivering the latest open-source technologies. It is
+            known for its frequent releases, strong security pr
+          </p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
